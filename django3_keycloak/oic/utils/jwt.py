@@ -1,10 +1,10 @@
 import json
 import uuid
 
-from jwkest import jwe
-from jwkest import jws
-from jwkest.jwe import JWE
-from jwkest.jws import NoSuitableSigningKeys
+from django3_keycloak.jwkest import jwe
+from django3_keycloak.jwkest import jws
+from django3_keycloak.jwkest.jwe import JWE
+from django3_keycloak.jwkest.jws import NoSuitableSigningKeys
 
 from django3_keycloak.oic.oic.message import JasonWebToken
 from django3_keycloak.oic.utils.time_util import utc_time_sans_frac

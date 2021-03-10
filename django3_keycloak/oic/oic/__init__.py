@@ -16,9 +16,9 @@ import six
 from future.backports.urllib.parse import urlparse
 from future.moves.urllib.parse import parse_qs
 
-from jwkest.jwe import JWE
-from jwkest import jws, as_bytes
-from jwkest import jwe
+from django3_keycloak.jwkest.jwe import JWE
+from django3_keycloak.jwkest import jws, as_bytes
+from django3_keycloak.jwkest import jwe
 from requests import ConnectionError
 
 from django3_keycloak.oic import oauth2, OIDCONF_PATTERN

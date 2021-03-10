@@ -4,9 +4,9 @@ from future.moves.urllib.parse import parse_qs
 import json
 
 from Cryptodome.PublicKey import RSA
-from jwkest import b64e
-from jwkest.jwk import RSAKey
-from jwkest.jwk import load_jwks
+from django3_keycloak.jwkest import b64e
+from django3_keycloak.jwkest.jwk import RSAKey
+from django3_keycloak.jwkest.jwk import load_jwks
 
 from django3_keycloak.oic.extension.message import TokenIntrospectionResponse
 from django3_keycloak.oic.extension.signed_http_req import SignedHttpRequest

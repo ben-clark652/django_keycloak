@@ -3,7 +3,7 @@ import logging
 import random
 import string
 
-from jwkest import b64e
+from django3_keycloak.jwkest import b64e
 
 from django3_keycloak.oic import oauth2
 from django3_keycloak.oic.exception import AuthzError

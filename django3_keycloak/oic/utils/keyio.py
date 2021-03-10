@@ -10,17 +10,17 @@ import time
 
 import requests
 from Cryptodome.PublicKey import RSA
-from jwkest import as_bytes
-from jwkest import as_unicode
-from jwkest import b64e
-from jwkest import jwe
-from jwkest import jws
-from jwkest.ecc import NISTEllipticCurve
-from jwkest.jwk import ECKey
-from jwkest.jwk import JWKException
-from jwkest.jwk import RSAKey
-from jwkest.jwk import SYMKey
-from jwkest.jwk import rsa_load
+from django3_keycloak.jwkest import as_bytes
+from django3_keycloak.jwkest import as_unicode
+from django3_keycloak.jwkest import b64e
+from django3_keycloak.jwkest import jwe
+from django3_keycloak.jwkest import jws
+from django3_keycloak.jwkest.ecc import NISTEllipticCurve
+from django3_keycloak.jwkest.jwk import ECKey
+from django3_keycloak.jwkest.jwk import JWKException
+from django3_keycloak.jwkest.jwk import RSAKey
+from django3_keycloak.jwkest.jwk import SYMKey
+from django3_keycloak.jwkest.jwk import rsa_load
 from six import string_types
 
 from django3_keycloak.oic.exception import MessageException
