@@ -9,7 +9,7 @@ import time
 import urllib
 
 import six
-from django3_keycloak.jwkest import jws
+from jwkest import jws
 
 from django3_keycloak.oic.exception import InvalidRequest
 from django3_keycloak.oic.exception import IssuerMismatch

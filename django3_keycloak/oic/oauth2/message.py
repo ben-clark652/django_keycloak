@@ -8,16 +8,16 @@ import logging
 from collections import MutableMapping
 
 import six
-from django3_keycloak.jwkest import as_unicode
-from django3_keycloak.jwkest import b64d
-from django3_keycloak.jwkest import jwe
-from django3_keycloak.jwkest import jws
-from django3_keycloak.jwkest.jwe import JWE
-from django3_keycloak.jwkest.jwk import keyitems2keyreps
-from django3_keycloak.jwkest.jws import JWS
-from django3_keycloak.jwkest.jws import NoSuitableSigningKeys
-from django3_keycloak.jwkest.jws import alg2keytype
-from django3_keycloak.jwkest.jwt import JWT
+from jwkest import as_unicode
+from jwkest import b64d
+from jwkest import jwe
+from jwkest import jws
+from jwkest.jwe import JWE
+from jwkest.jwk import keyitems2keyreps
+from jwkest.jws import JWS
+from jwkest.jws import NoSuitableSigningKeys
+from jwkest.jws import alg2keytype
+from jwkest.jwt import JWT
 
 from django3_keycloak.oic.exception import MessageException
 from django3_keycloak.oic.exception import PyoidcError

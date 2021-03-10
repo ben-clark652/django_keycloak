@@ -10,8 +10,8 @@ import traceback
 from functools import cmp_to_key
 
 import six
-from django3_keycloak.jwkest import b64e
-from django3_keycloak.jwkest import jws
+from jwkest import b64e
+from jwkest import jws
 
 from django3_keycloak.oic import rndstr
 from django3_keycloak.oic.exception import FailedAuthentication

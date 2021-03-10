@@ -4,9 +4,9 @@ from django.conf import settings as django_settings
 from django.contrib.auth import get_user_model
 from django.utils.encoding import smart_text
 from django.utils.functional import cached_property
-from django3_keycloak.jwkest import JWKESTException
-from django3_keycloak.jwkest.jwk import KEYS
-from django3_keycloak.jwkest.jws import JWS
+from jwkest import JWKESTException
+from jwkest.jwk import KEYS
+from jwkest.jws import JWS
 import requests
 from requests.exceptions import HTTPError
 from rest_framework.authentication import BaseAuthentication, get_authorization_header

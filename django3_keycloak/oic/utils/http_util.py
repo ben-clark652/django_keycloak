@@ -10,8 +10,8 @@ import os
 import time
 import warnings
 
-from django3_keycloak.jwkest import as_unicode
-from django3_keycloak.jwkest import safe_str_cmp
+from jwkest import as_unicode
+from jwkest import safe_str_cmp
 from six import PY2
 from six import binary_type
 from six import text_type

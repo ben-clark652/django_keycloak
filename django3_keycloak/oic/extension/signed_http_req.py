@@ -2,9 +2,9 @@ import hashlib
 import json
 from base64 import urlsafe_b64encode
 
-from django3_keycloak.jwkest import JWKESTException
-from django3_keycloak.jwkest import jws
-from django3_keycloak.jwkest.jws import JWS
+from jwkest import JWKESTException
+from jwkest import jws
+from jwkest.jws import JWS
 
 
 class ValidationError(Exception):

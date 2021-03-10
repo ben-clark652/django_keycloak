@@ -23,7 +23,7 @@ from django.utils.translation import ugettext as _
 from django3_keycloak.djangooidc.backends import OpenIdConnectBackend as DOIDCBackend
 
 from django3_keycloak.bossoidc.models import Keycloak as KeycloakModel
-from django3_keycloak.jwkest.jwt import JWT
+from jwkest.jwt import JWT
 
 import logging
 

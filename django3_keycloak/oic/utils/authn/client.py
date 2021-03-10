@@ -2,10 +2,10 @@ import base64
 import logging
 
 import six
-from django3_keycloak.jwkest import Invalid
-from django3_keycloak.jwkest import MissingKey
-from django3_keycloak.jwkest import as_bytes
-from django3_keycloak.jwkest.jws import alg2keytype
+from jwkest import Invalid
+from jwkest import MissingKey
+from jwkest import as_bytes
+from jwkest.jws import alg2keytype
 
 from django3_keycloak.oic import rndstr
 from django3_keycloak.oic.exception import FailedAuthentication

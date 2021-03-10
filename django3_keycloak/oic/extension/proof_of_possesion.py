@@ -6,9 +6,9 @@ import base64
 import json
 import time
 
-from django3_keycloak.jwkest import jws
-from django3_keycloak.jwkest.jwk import keyrep
-from django3_keycloak.jwkest.jws import JWS
+from jwkest import jws
+from jwkest.jwk import keyrep
+from jwkest.jws import JWS
 
 from django3_keycloak.oic.extension.signed_http_req import SignedHttpRequest
 from django3_keycloak.oic.extension.signed_http_req import ValidationError

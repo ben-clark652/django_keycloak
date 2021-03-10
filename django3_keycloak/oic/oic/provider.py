@@ -21,15 +21,15 @@ import warnings
 from functools import cmp_to_key
 
 import six
-from django3_keycloak.jwkest import b64d
-from django3_keycloak.jwkest import jwe
-from django3_keycloak.jwkest import jws
-from django3_keycloak.jwkest.jwe import JWE
-from django3_keycloak.jwkest.jwe import JWEException
-from django3_keycloak.jwkest.jwe import NotSupportedAlgorithm
-from django3_keycloak.jwkest.jwk import SYMKey
-from django3_keycloak.jwkest.jws import NoSuitableSigningKeys
-from django3_keycloak.jwkest.jws import alg2keytype
+from jwkest import b64d
+from jwkest import jwe
+from jwkest import jws
+from jwkest.jwe import JWE
+from jwkest.jwe import JWEException
+from jwkest.jwe import NotSupportedAlgorithm
+from jwkest.jwk import SYMKey
+from jwkest.jws import NoSuitableSigningKeys
+from jwkest.jws import alg2keytype
 from requests import ConnectionError
 
 from django3_keycloak.oic import rndstr

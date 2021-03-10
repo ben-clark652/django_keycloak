@@ -4,7 +4,7 @@ from future.backports.urllib.parse import urlparse
 import logging
 import warnings
 
-from django3_keycloak.jwkest import b64e
+from jwkest import b64e
 
 from django3_keycloak.oic import CC_METHOD
 from django3_keycloak.oic import OIDCONF_PATTERN
