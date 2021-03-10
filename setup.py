@@ -1,8 +1,8 @@
 from setuptools import find_packages
 from distutils.core import setup
-from _django_keycloak.settings import VERSION
+from django3_keycloak.settings import VERSION
 setup(
-    name='django_keycloak',
+    name='django3_keycloak',
     version=VERSION,
     license='MIT',
     description='Django 3 Keycloak Integration',

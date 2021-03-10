@@ -17,7 +17,7 @@ from django.contrib.admin.sites import NotRegistered
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
-from _django_keycloak.bossoidc.models import Keycloak
+from django3_keycloak.bossoidc.models import Keycloak
 
 
 # Define an inline admin descriptor for Keycloak model

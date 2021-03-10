@@ -20,9 +20,9 @@ from rest_framework.settings import import_from_string
 from rest_framework.authentication import get_authorization_header
 
 from django.utils.translation import ugettext as _
-from _django_keycloak.djangooidc import OpenIdConnectBackend as DOIDCBackend
+from django3_keycloak.djangooidc import OpenIdConnectBackend as DOIDCBackend
 
-from _django_keycloak.bossoidc.models import Keycloak as KeycloakModel
+from django3_keycloak.bossoidc.models import Keycloak as KeycloakModel
 from jwkest.jwt import JWT
 
 import logging
