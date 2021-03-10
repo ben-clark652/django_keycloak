@@ -7,8 +7,8 @@ import requests
 from six.moves.urllib.parse import urlencode
 from six.moves.urllib.parse import urlparse
 
-from oic.exception import PyoidcError
-from oic.utils.time_util import in_a_while
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.utils.time_util import in_a_while
 
 try:
     from past.builtins import basestring

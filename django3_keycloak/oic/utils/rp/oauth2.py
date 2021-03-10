@@ -4,20 +4,20 @@ import copy
 import hashlib
 import logging
 
-from oic import rndstr
-from oic.extension import client
-from oic.extension.client import ClientInfoResponse
-from oic.oauth2 import AccessTokenResponse
-from oic.oauth2 import AuthorizationRequest
-from oic.oauth2 import AuthorizationResponse
-from oic.oauth2 import ErrorResponse
-from oic.oauth2 import ResponseError
-from oic.oauth2 import TokenError
-from oic.oic import ProviderConfigurationResponse
-from oic.utils.authn.client import CLIENT_AUTHN_METHOD
-from oic.utils.http_util import Redirect
-from oic.utils.sanitize import sanitize
-from oic.utils.webfinger import WebFinger
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.extension import client
+from django3_keycloak.oic.extension.client import ClientInfoResponse
+from django3_keycloak.oic.oauth2 import AccessTokenResponse
+from django3_keycloak.oic.oauth2 import AuthorizationRequest
+from django3_keycloak.oic.oauth2 import AuthorizationResponse
+from django3_keycloak.oic.oauth2 import ErrorResponse
+from django3_keycloak.oic.oauth2 import ResponseError
+from django3_keycloak.oic.oauth2 import TokenError
+from django3_keycloak.oic.oic import ProviderConfigurationResponse
+from django3_keycloak.oic.utils.authn.client import CLIENT_AUTHN_METHOD
+from django3_keycloak.oic.utils.http_util import Redirect
+from django3_keycloak.oic.utils.sanitize import sanitize
+from django3_keycloak.oic.utils.webfinger import WebFinger
 
 __author__ = 'roland'
 

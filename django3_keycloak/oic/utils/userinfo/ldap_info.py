@@ -5,8 +5,8 @@ except ImportError:
 
 import logging
 
-from oic.utils.sanitize import sanitize
-from oic.utils.userinfo import UserInfo
+from django3_keycloak.oic.utils.sanitize import sanitize
+from django3_keycloak.oic.utils.userinfo import UserInfo
 
 __author__ = 'rolandh'
 

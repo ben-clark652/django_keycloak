@@ -5,25 +5,25 @@ import string
 
 from jwkest import b64e
 
-from oic import oauth2
-from oic.exception import AuthzError
-from oic.exception import PyoidcError
-from oic.extension.message import ClientInfoResponse
-from oic.extension.message import ClientRegistrationError
-from oic.extension.message import ClientUpdateRequest
-from oic.extension.message import RegistrationRequest
-from oic.extension.message import TokenIntrospectionRequest
-from oic.extension.message import TokenIntrospectionResponse
-from oic.extension.message import TokenRevocationRequest
-from oic.oauth2.exception import Unsupported
-from oic.oauth2.message import ASConfigurationResponse
-from oic.oauth2.message import AuthorizationRequest
-from oic.oauth2.message import ErrorResponse
-from oic.oic import OIDCONF_PATTERN
-from oic.oic.message import AuthorizationResponse
-from oic.utils.http_util import SUCCESSFUL
-from oic.utils.keyio import KeyJar
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic import oauth2
+from django3_keycloak.oic.exception import AuthzError
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.extension.message import ClientInfoResponse
+from django3_keycloak.oic.extension.message import ClientRegistrationError
+from django3_keycloak.oic.extension.message import ClientUpdateRequest
+from django3_keycloak.oic.extension.message import RegistrationRequest
+from django3_keycloak.oic.extension.message import TokenIntrospectionRequest
+from django3_keycloak.oic.extension.message import TokenIntrospectionResponse
+from django3_keycloak.oic.extension.message import TokenRevocationRequest
+from django3_keycloak.oic.oauth2.exception import Unsupported
+from django3_keycloak.oic.oauth2.message import ASConfigurationResponse
+from django3_keycloak.oic.oauth2.message import AuthorizationRequest
+from django3_keycloak.oic.oauth2.message import ErrorResponse
+from django3_keycloak.oic.oic import OIDCONF_PATTERN
+from django3_keycloak.oic.oic.message import AuthorizationResponse
+from django3_keycloak.oic.utils.http_util import SUCCESSFUL
+from django3_keycloak.oic.utils.keyio import KeyJar
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 logger = logging.getLogger(__name__)
 

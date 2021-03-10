@@ -6,8 +6,8 @@ from jwkest import jws
 from jwkest.jwe import JWE
 from jwkest.jws import NoSuitableSigningKeys
 
-from oic.oic.message import JasonWebToken
-from oic.utils.time_util import utc_time_sans_frac
+from django3_keycloak.oic.oic.message import JasonWebToken
+from django3_keycloak.oic.utils.time_util import utc_time_sans_frac
 
 __author__ = 'roland'
 

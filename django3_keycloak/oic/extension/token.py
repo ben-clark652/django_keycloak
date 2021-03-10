@@ -1,13 +1,13 @@
 import json
 import uuid
 
-from oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
-from oic.oauth2.message import SINGLE_REQUIRED_STRING
-from oic.oauth2.message import Message
-from oic.oic.message import SINGLE_REQUIRED_INT
-from oic.utils.jwt import JWT
-from oic.utils.sdb import Token
-from oic.utils.time_util import utc_time_sans_frac
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import SINGLE_REQUIRED_STRING
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.oic.message import SINGLE_REQUIRED_INT
+from django3_keycloak.oic.utils.jwt import JWT
+from django3_keycloak.oic.utils.sdb import Token
+from django3_keycloak.oic.utils.time_util import utc_time_sans_frac
 
 __author__ = 'roland'
 

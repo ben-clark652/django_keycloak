@@ -1,5 +1,5 @@
-from oic.utils.authn.authn_context import make_auth_verify
-from oic.utils.authn.user import UserAuthnMethod
+from django3_keycloak.oic.utils.authn.authn_context import make_auth_verify
+from django3_keycloak.oic.utils.authn.user import UserAuthnMethod
 
 __author__ = 'danielevertsson'
 

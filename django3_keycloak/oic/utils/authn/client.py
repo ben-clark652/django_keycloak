@@ -7,19 +7,19 @@ from jwkest import MissingKey
 from jwkest import as_bytes
 from jwkest.jws import alg2keytype
 
-from oic import rndstr
-from oic.exception import FailedAuthentication
-from oic.exception import NotForMe
-from oic.exception import UnknownAssertionType
-from oic.oauth2 import AccessTokenRequest
-from oic.oauth2.message import SINGLE_OPTIONAL_STRING
-from oic.oauth2.message import VREQUIRED
-from oic.oic import DEF_SIGN_ALG
-from oic.oic import JWT_BEARER
-from oic.oic.message import AuthnToken
-from oic.utils.keyio import check_key_availability
-from oic.utils.sanitize import sanitize
-from oic.utils.time_util import utc_time_sans_frac
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.exception import FailedAuthentication
+from django3_keycloak.oic.exception import NotForMe
+from django3_keycloak.oic.exception import UnknownAssertionType
+from django3_keycloak.oic.oauth2 import AccessTokenRequest
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_STRING
+from django3_keycloak.oic.oauth2.message import VREQUIRED
+from django3_keycloak.oic.oic import DEF_SIGN_ALG
+from django3_keycloak.oic.oic import JWT_BEARER
+from django3_keycloak.oic.oic.message import AuthnToken
+from django3_keycloak.oic.utils.keyio import check_key_availability
+from django3_keycloak.oic.utils.sanitize import sanitize
+from django3_keycloak.oic.utils.time_util import utc_time_sans_frac
 
 logger = logging.getLogger(__name__)
 
@@ -443,7 +443,7 @@ class PrivateKeyJWT(JWSAuthnMethod):
                                                alg=algorithm)
 
 
-# from oic.utils.authn.client_saml import SAML2_BEARER_ASSERTION_TYPE
+# from django3_keycloak.oic.utils.authn.client_saml import SAML2_BEARER_ASSERTION_TYPE
 
 
 CLIENT_AUTHN_METHOD = {

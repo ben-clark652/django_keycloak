@@ -11,16 +11,16 @@ import time
 
 import six
 
-from oic.exception import ImproperlyConfigured
-from oic.exception import PyoidcError
-from oic.oauth2 import compact
-from oic.utils import aes
-from oic.utils.http_util import CookieDealer
-from oic.utils.http_util import InvalidCookieSign
-from oic.utils.http_util import Response
-from oic.utils.http_util import SeeOther
-from oic.utils.http_util import Unauthorized
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic.exception import ImproperlyConfigured
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.oauth2 import compact
+from django3_keycloak.oic.utils import aes
+from django3_keycloak.oic.utils.http_util import CookieDealer
+from django3_keycloak.oic.utils.http_util import InvalidCookieSign
+from django3_keycloak.oic.utils.http_util import Response
+from django3_keycloak.oic.utils.http_util import SeeOther
+from django3_keycloak.oic.utils.http_util import Unauthorized
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 __author__ = 'rolandh'
 

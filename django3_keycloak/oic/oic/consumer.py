@@ -2,23 +2,23 @@
 import logging
 import os.path
 
-from oic import rndstr
-from oic.exception import AuthzError
-from oic.exception import PyoidcError
-from oic.oauth2 import Grant
-from oic.oauth2.consumer import TokenError
-from oic.oauth2.consumer import UnknownState
-from oic.oauth2.consumer import stateID
-from oic.oauth2.message import ErrorResponse
-from oic.oic import ENDPOINTS
-from oic.oic import Client
-from oic.oic.message import AccessTokenResponse
-from oic.oic.message import AuthorizationRequest
-from oic.oic.message import AuthorizationResponse
-from oic.oic.message import Claims
-from oic.oic.message import ClaimsRequest
-from oic.utils import http_util
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.exception import AuthzError
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.oauth2 import Grant
+from django3_keycloak.oic.oauth2.consumer import TokenError
+from django3_keycloak.oic.oauth2.consumer import UnknownState
+from django3_keycloak.oic.oauth2.consumer import stateID
+from django3_keycloak.oic.oauth2.message import ErrorResponse
+from django3_keycloak.oic.oic import ENDPOINTS
+from django3_keycloak.oic.oic import Client
+from django3_keycloak.oic.oic.message import AccessTokenResponse
+from django3_keycloak.oic.oic.message import AuthorizationRequest
+from django3_keycloak.oic.oic.message import AuthorizationResponse
+from django3_keycloak.oic.oic.message import Claims
+from django3_keycloak.oic.oic.message import ClaimsRequest
+from django3_keycloak.oic.utils import http_util
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 __author__ = 'rohe0002'
 

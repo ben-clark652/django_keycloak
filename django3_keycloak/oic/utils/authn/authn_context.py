@@ -1,6 +1,6 @@
 from functools import cmp_to_key
 
-from oic.utils.http_util import extract_from_request
+from django3_keycloak.oic.utils.http_util import extract_from_request
 
 __author__ = 'rolandh'
 

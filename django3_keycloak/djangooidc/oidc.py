@@ -1,13 +1,13 @@
 # coding: utf-8
 
 from django.conf import settings
-from oic.exception import MissingAttribute
-from oic import oic, rndstr
-from oic.oauth2 import ErrorResponse
-from oic.oic import ProviderConfigurationResponse, AuthorizationResponse
-from oic.oic import RegistrationResponse
-from oic.oic import AuthorizationRequest
-from oic.utils.authn.client import CLIENT_AUTHN_METHOD
+from django3_keycloak.oic.exception import MissingAttribute
+from django3_keycloak.oic import oic, rndstr
+from django3_keycloak.oic.oauth2 import ErrorResponse
+from django3_keycloak.oic.oic import ProviderConfigurationResponse, AuthorizationResponse
+from django3_keycloak.oic.oic import RegistrationResponse
+from django3_keycloak.oic.oic import AuthorizationRequest
+from django3_keycloak.oic.utils.authn.client import CLIENT_AUTHN_METHOD
 
 __author__ = 'roland'
 

@@ -3,7 +3,7 @@ from tempfile import NamedTemporaryFile
 
 import six
 
-from oic.utils.userinfo import UserInfo
+from django3_keycloak.oic.utils.userinfo import UserInfo
 
 __author__ = 'danielevertsson'
 

@@ -1,7 +1,7 @@
 import base64
 
-from oic.utils.authn.client import CLIENT_AUTHN_METHOD
-from oic.utils.authn.client import ClientAuthnMethod
+from django3_keycloak.oic.utils.authn.client import CLIENT_AUTHN_METHOD
+from django3_keycloak.oic.utils.authn.client import ClientAuthnMethod
 
 __author__ = 'rolandh'
 

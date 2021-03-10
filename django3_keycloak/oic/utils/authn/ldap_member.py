@@ -1,6 +1,6 @@
 import logging
 
-from oic.utils.userinfo.ldap_info import UserInfoLDAP
+from django3_keycloak.oic.utils.userinfo.ldap_info import UserInfoLDAP
 
 __author__ = 'haho0032'
 

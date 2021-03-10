@@ -12,15 +12,15 @@ import json
 
 import six
 
-from oic.oauth2.message import OPTIONAL_LIST_OF_SP_SEP_STRINGS
-from oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
-from oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
-from oic.oauth2.message import SINGLE_OPTIONAL_INT
-from oic.oauth2.message import SINGLE_OPTIONAL_STRING
-from oic.oauth2.message import SINGLE_REQUIRED_STRING
-from oic.oauth2.message import Message
-from oic.oic.message import SINGLE_REQUIRED_INT
-from oic.oic.message import msg_ser
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_SP_SEP_STRINGS
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_INT
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_STRING
+from django3_keycloak.oic.oauth2.message import SINGLE_REQUIRED_STRING
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.oic.message import SINGLE_REQUIRED_INT
+from django3_keycloak.oic.oic.message import msg_ser
 
 __author__ = 'roland'
 

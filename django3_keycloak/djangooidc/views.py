@@ -10,7 +10,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render, resolve_url
 from urllib.parse import parse_qs, urlencode
 
-from django3_keycloak.djangooidc import OIDCClients, OIDCError
+from django3_keycloak.djangooidc.oidc import OIDCClients, OIDCError
 
 logger = logging.getLogger(__name__)
 

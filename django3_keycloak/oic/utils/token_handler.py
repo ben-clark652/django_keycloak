@@ -1,5 +1,5 @@
-from oic import rndstr
-from oic.extension.token import JWTToken
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.extension.token import JWTToken
 
 __author__ = 'roland'
 

@@ -23,12 +23,12 @@ from saml2.s_utils import UnsupportedBinding
 from saml2.s_utils import rndstr
 from saml2.s_utils import sid
 
-from oic.oauth2.exception import VerificationError
-from oic.utils.authn.user import UserAuthnMethod
-from oic.utils.authn.user import create_return_url
-from oic.utils.http_util import Response
-from oic.utils.http_util import SeeOther
-from oic.utils.http_util import Unauthorized
+from django3_keycloak.oic.oauth2.exception import VerificationError
+from django3_keycloak.oic.utils.authn.user import UserAuthnMethod
+from django3_keycloak.oic.utils.authn.user import create_return_url
+from django3_keycloak.oic.utils.http_util import Response
+from django3_keycloak.oic.utils.http_util import SeeOther
+from django3_keycloak.oic.utils.http_util import Unauthorized
 
 logger = logging.getLogger(__name__)
 

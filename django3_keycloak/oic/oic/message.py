@@ -11,27 +11,27 @@ import urllib
 import six
 from jwkest import jws
 
-from oic.exception import InvalidRequest
-from oic.exception import IssuerMismatch
-from oic.exception import MessageException
-from oic.exception import NotForMe
-from oic.exception import PyoidcError
-from oic.oauth2 import message
-from oic.oauth2.exception import VerificationError
-from oic.oauth2.message import OPTIONAL_LIST_OF_SP_SEP_STRINGS
-from oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
-from oic.oauth2.message import REQUIRED_LIST_OF_SP_SEP_STRINGS
-from oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
-from oic.oauth2.message import SINGLE_OPTIONAL_INT
-from oic.oauth2.message import SINGLE_OPTIONAL_JSON
-from oic.oauth2.message import SINGLE_OPTIONAL_STRING
-from oic.oauth2.message import SINGLE_REQUIRED_STRING
-from oic.oauth2.message import Message
-from oic.oauth2.message import MissingRequiredAttribute
-from oic.oauth2.message import MissingRequiredValue
-from oic.oauth2.message import NotAllowedValue
-from oic.oauth2.message import SchemeError
-from oic.utils import time_util
+from django3_keycloak.oic.exception import InvalidRequest
+from django3_keycloak.oic.exception import IssuerMismatch
+from django3_keycloak.oic.exception import MessageException
+from django3_keycloak.oic.exception import NotForMe
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.oauth2 import message
+from django3_keycloak.oic.oauth2.exception import VerificationError
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_SP_SEP_STRINGS
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import REQUIRED_LIST_OF_SP_SEP_STRINGS
+from django3_keycloak.oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_INT
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_JSON
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_STRING
+from django3_keycloak.oic.oauth2.message import SINGLE_REQUIRED_STRING
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.oauth2.message import MissingRequiredAttribute
+from django3_keycloak.oic.oauth2.message import MissingRequiredValue
+from django3_keycloak.oic.oauth2.message import NotAllowedValue
+from django3_keycloak.oic.oauth2.message import SchemeError
+from django3_keycloak.oic.utils import time_util
 
 __author__ = 'rohe0002'
 

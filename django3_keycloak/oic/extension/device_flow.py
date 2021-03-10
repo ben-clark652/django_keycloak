@@ -1,12 +1,12 @@
-from oic import rndstr
-from oic.extension.single import SingleClient
-from oic.extension.single import SingleService
-from oic.oauth2.message import SINGLE_OPTIONAL_INT
-from oic.oauth2.message import SINGLE_OPTIONAL_STRING
-from oic.oauth2.message import SINGLE_REQUIRED_STRING
-from oic.oauth2.message import AccessTokenResponse
-from oic.oauth2.message import Message
-from oic.utils.time_util import time_sans_frac
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.extension.single import SingleClient
+from django3_keycloak.oic.extension.single import SingleService
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_INT
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_STRING
+from django3_keycloak.oic.oauth2.message import SINGLE_REQUIRED_STRING
+from django3_keycloak.oic.oauth2.message import AccessTokenResponse
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.utils.time_util import time_sans_frac
 
 
 class AuthorizationRequest(Message):

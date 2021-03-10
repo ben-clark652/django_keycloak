@@ -1,8 +1,8 @@
 import time
 
-from oic.oauth2.message import AccessTokenResponse
-from oic.oauth2.message import AuthorizationResponse
-from oic.utils.time_util import utc_time_sans_frac
+from django3_keycloak.oic.oauth2.message import AccessTokenResponse
+from django3_keycloak.oic.oauth2.message import AuthorizationResponse
+from django3_keycloak.oic.utils.time_util import utc_time_sans_frac
 
 __author__ = 'roland'
 

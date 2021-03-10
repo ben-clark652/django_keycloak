@@ -1,22 +1,22 @@
 import logging
 
-from oic import rndstr
-from oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
-from oic.oauth2.message import SINGLE_OPTIONAL_STRING
-from oic.oauth2.message import SINGLE_REQUIRED_STRING
-from oic.oauth2.message import Message
-from oic.oic import REQUEST2ENDPOINT
-from oic.oic import RESPONSE2ERROR
-from oic.oic import Client
-from oic.oic import Server as OicServer
-from oic.oic.message import Claims
-from oic.oic.message import OpenIDSchema
-from oic.oic.provider import Endpoint
-from oic.oic.provider import Provider
-from oic.utils.authn.client import bearer_auth
-from oic.utils.http_util import Response
-from oic.utils.keyio import KeyJar
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_STRING
+from django3_keycloak.oic.oauth2.message import SINGLE_REQUIRED_STRING
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.oic import REQUEST2ENDPOINT
+from django3_keycloak.oic.oic import RESPONSE2ERROR
+from django3_keycloak.oic.oic import Client
+from django3_keycloak.oic.oic import Server as OicServer
+from django3_keycloak.oic.oic.message import Claims
+from django3_keycloak.oic.oic.message import OpenIDSchema
+from django3_keycloak.oic.oic.provider import Endpoint
+from django3_keycloak.oic.oic.provider import Provider
+from django3_keycloak.oic.utils.authn.client import bearer_auth
+from django3_keycloak.oic.utils.http_util import Response
+from django3_keycloak.oic.utils.keyio import KeyJar
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 __author__ = 'rohe0002'
 

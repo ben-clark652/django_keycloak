@@ -11,11 +11,11 @@ import uuid
 
 from cryptography.fernet import Fernet
 
-from oic import rndstr
-from oic.exception import ImproperlyConfigured
-from oic.oic import AuthorizationRequest
-from oic.utils.time_util import time_sans_frac
-from oic.utils.time_util import utc_time_sans_frac
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.exception import ImproperlyConfigured
+from django3_keycloak.oic.oic import AuthorizationRequest
+from django3_keycloak.oic.utils.time_util import time_sans_frac
+from django3_keycloak.oic.utils.time_util import utc_time_sans_frac
 
 __author__ = 'rohe0002'
 

@@ -8,11 +8,11 @@ from jwkest import b64e
 from jwkest.jwk import RSAKey
 from jwkest.jwk import load_jwks
 
-from oic.extension.message import TokenIntrospectionResponse
-from oic.extension.signed_http_req import SignedHttpRequest
-from oic.oauth2 import compact
-from oic.utils.jwt import JWT
-from oic.utils.keyio import KeyBundle
+from django3_keycloak.oic.extension.message import TokenIntrospectionResponse
+from django3_keycloak.oic.extension.signed_http_req import SignedHttpRequest
+from django3_keycloak.oic.oauth2 import compact
+from django3_keycloak.oic.utils.jwt import JWT
+from django3_keycloak.oic.utils.keyio import KeyBundle
 
 __author__ = 'roland'
 

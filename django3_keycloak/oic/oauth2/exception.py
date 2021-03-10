@@ -1,4 +1,4 @@
-from oic.exception import PyoidcError
+from django3_keycloak.oic.exception import PyoidcError
 
 __author__ = 'roland'
 

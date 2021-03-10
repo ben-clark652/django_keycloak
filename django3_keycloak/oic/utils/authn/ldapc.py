@@ -3,8 +3,8 @@ try:
 except ImportError:
     raise ImportError('This module can be used only with pyldap installed.')
 
-from oic.exception import PyoidcError
-from oic.utils.authn.user import UsernamePasswordMako
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.utils.authn.user import UsernamePasswordMako
 
 SCOPE_MAP = {
     "base": ldap.SCOPE_BASE,

@@ -2,7 +2,7 @@ import hashlib
 import logging
 import os
 
-from oic.utils.http_util import Response
+from django3_keycloak.oic.utils.http_util import Response
 
 try:
     from json import JSONDecodeError
@@ -21,60 +21,60 @@ from jwkest import jws, as_bytes
 from jwkest import jwe
 from requests import ConnectionError
 
-from oic import oauth2, OIDCONF_PATTERN
-from oic import rndstr
+from django3_keycloak.oic import oauth2, OIDCONF_PATTERN
+from django3_keycloak.oic import rndstr
 
-from oic.exception import AuthzError
-from oic.exception import AuthnToOld
-from oic.exception import ParameterError
-from oic.exception import SubMismatch
+from django3_keycloak.oic.exception import AuthzError
+from django3_keycloak.oic.exception import AuthnToOld
+from django3_keycloak.oic.exception import ParameterError
+from django3_keycloak.oic.exception import SubMismatch
 
-from oic.oauth2 import HTTP_ARGS
-from oic.oauth2 import authz_error
-from oic.oauth2.consumer import ConfigurationError
-from oic.oauth2.exception import OtherError
-from oic.oauth2.exception import ParseError
-from oic.oauth2.exception import MissingRequiredAttribute
-from oic.oauth2.message import ErrorResponse
-from oic.oauth2.message import Message
-from oic.oauth2.util import get_or_post
+from django3_keycloak.oic.oauth2 import HTTP_ARGS
+from django3_keycloak.oic.oauth2 import authz_error
+from django3_keycloak.oic.oauth2.consumer import ConfigurationError
+from django3_keycloak.oic.oauth2.exception import OtherError
+from django3_keycloak.oic.oauth2.exception import ParseError
+from django3_keycloak.oic.oauth2.exception import MissingRequiredAttribute
+from django3_keycloak.oic.oauth2.message import ErrorResponse
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.oauth2.util import get_or_post
 
-from oic.oic.message import ClaimsRequest
-from oic.oic.message import IdToken
-from oic.oic.message import JasonWebToken
-from oic.oic.message import SCOPE2CLAIMS
-from oic.oic.message import RegistrationResponse
-from oic.oic.message import AuthorizationResponse
-from oic.oic.message import AccessTokenResponse
-from oic.oic.message import Claims
-from oic.oic.message import AccessTokenRequest
-from oic.oic.message import RefreshAccessTokenRequest
-from oic.oic.message import UserInfoRequest
-from oic.oic.message import AuthorizationRequest
-from oic.oic.message import OpenIDRequest
-from oic.oic.message import RegistrationRequest
-from oic.oic.message import RefreshSessionRequest
-from oic.oic.message import CheckSessionRequest
-from oic.oic.message import CheckIDRequest
-from oic.oic.message import EndSessionRequest
-from oic.oic.message import OpenIDSchema
-from oic.oic.message import ProviderConfigurationResponse
-from oic.oic.message import TokenErrorResponse
-from oic.oic.message import ClientRegistrationErrorResponse
-from oic.oic.message import UserInfoErrorResponse
-from oic.oic.message import AuthorizationErrorResponse
-from oic.exception import AccessDenied
-from oic.exception import CommunicationError
-from oic.exception import IssuerMismatch
-from oic.exception import MissingParameter
-from oic.exception import PyoidcError
-from oic.exception import RegistrationError
-from oic.exception import RequestError
-from oic.utils import time_util
-from oic.utils.keyio import KeyJar
-from oic.utils.sanitize import sanitize
-from oic.utils.webfinger import OIC_ISSUER
-from oic.utils.webfinger import WebFinger
+from django3_keycloak.oic.oic.message import ClaimsRequest
+from django3_keycloak.oic.oic.message import IdToken
+from django3_keycloak.oic.oic.message import JasonWebToken
+from django3_keycloak.oic.oic.message import SCOPE2CLAIMS
+from django3_keycloak.oic.oic.message import RegistrationResponse
+from django3_keycloak.oic.oic.message import AuthorizationResponse
+from django3_keycloak.oic.oic.message import AccessTokenResponse
+from django3_keycloak.oic.oic.message import Claims
+from django3_keycloak.oic.oic.message import AccessTokenRequest
+from django3_keycloak.oic.oic.message import RefreshAccessTokenRequest
+from django3_keycloak.oic.oic.message import UserInfoRequest
+from django3_keycloak.oic.oic.message import AuthorizationRequest
+from django3_keycloak.oic.oic.message import OpenIDRequest
+from django3_keycloak.oic.oic.message import RegistrationRequest
+from django3_keycloak.oic.oic.message import RefreshSessionRequest
+from django3_keycloak.oic.oic.message import CheckSessionRequest
+from django3_keycloak.oic.oic.message import CheckIDRequest
+from django3_keycloak.oic.oic.message import EndSessionRequest
+from django3_keycloak.oic.oic.message import OpenIDSchema
+from django3_keycloak.oic.oic.message import ProviderConfigurationResponse
+from django3_keycloak.oic.oic.message import TokenErrorResponse
+from django3_keycloak.oic.oic.message import ClientRegistrationErrorResponse
+from django3_keycloak.oic.oic.message import UserInfoErrorResponse
+from django3_keycloak.oic.oic.message import AuthorizationErrorResponse
+from django3_keycloak.oic.exception import AccessDenied
+from django3_keycloak.oic.exception import CommunicationError
+from django3_keycloak.oic.exception import IssuerMismatch
+from django3_keycloak.oic.exception import MissingParameter
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.exception import RegistrationError
+from django3_keycloak.oic.exception import RequestError
+from django3_keycloak.oic.utils import time_util
+from django3_keycloak.oic.utils.keyio import KeyJar
+from django3_keycloak.oic.utils.sanitize import sanitize
+from django3_keycloak.oic.utils.webfinger import OIC_ISSUER
+from django3_keycloak.oic.utils.webfinger import WebFinger
 
 __author__ = 'rohe0002'
 

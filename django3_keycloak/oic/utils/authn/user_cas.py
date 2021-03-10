@@ -10,9 +10,9 @@ import xml.etree.ElementTree as ET
 import requests
 import six
 
-from oic.utils.authn.user import UserAuthnMethod
-from oic.utils.http_util import SeeOther
-from oic.utils.http_util import Unauthorized
+from django3_keycloak.oic.utils.authn.user import UserAuthnMethod
+from django3_keycloak.oic.utils.http_util import SeeOther
+from django3_keycloak.oic.utils.http_util import Unauthorized
 
 logger = logging.getLogger(__name__)
 

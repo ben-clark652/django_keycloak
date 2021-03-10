@@ -23,8 +23,8 @@ from jwkest.jwk import SYMKey
 from jwkest.jwk import rsa_load
 from six import string_types
 
-from oic.exception import MessageException
-from oic.exception import PyoidcError
+from django3_keycloak.oic.exception import MessageException
+from django3_keycloak.oic.exception import PyoidcError
 
 __author__ = 'rohe0002'
 

@@ -3,18 +3,18 @@ import logging
 import time
 from hashlib import md5
 
-from oic import rndstr
-from oic.exception import AuthzError
-from oic.exception import PyoidcError
-from oic.oauth2 import Client
-from oic.oauth2 import Grant
-from oic.oauth2.message import AccessTokenRequest
-from oic.oauth2.message import AccessTokenResponse
-from oic.oauth2.message import AuthorizationRequest
-from oic.oauth2.message import AuthorizationResponse
-from oic.oauth2.message import Message
-from oic.utils import http_util
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.exception import AuthzError
+from django3_keycloak.oic.exception import PyoidcError
+from django3_keycloak.oic.oauth2 import Client
+from django3_keycloak.oic.oauth2 import Grant
+from django3_keycloak.oic.oauth2.message import AccessTokenRequest
+from django3_keycloak.oic.oauth2.message import AccessTokenResponse
+from django3_keycloak.oic.oauth2.message import AuthorizationRequest
+from django3_keycloak.oic.oauth2.message import AuthorizationResponse
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.utils import http_util
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 __author__ = 'rohe0002'
 

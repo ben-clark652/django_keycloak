@@ -7,7 +7,7 @@ from six import with_metaclass
 from six.moves.urllib.parse import quote
 from six.moves.urllib.parse import urljoin
 
-from oic.oauth2.exception import NoClientInfoReceivedError
+from django3_keycloak.oic.oauth2.exception import NoClientInfoReceivedError
 
 
 class BaseClientDatabase(with_metaclass(ABCMeta)):

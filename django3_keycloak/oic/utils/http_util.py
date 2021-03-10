@@ -1,5 +1,5 @@
-from future.backports.http.cookies import SimpleCookie
-from future.backports.urllib.parse import quote
+from http.cookies import SimpleCookie
+from urllib.parse import quote
 
 import base64
 import cgi
@@ -16,12 +16,12 @@ from six import PY2
 from six import binary_type
 from six import text_type
 
-from oic import rndstr
-from oic.exception import ImproperlyConfigured
-from oic.exception import UnsupportedMethod
-from oic.utils import time_util
-from oic.utils.aes import AEAD
-from oic.utils.aes import AESError
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.exception import ImproperlyConfigured
+from django3_keycloak.oic.exception import UnsupportedMethod
+from django3_keycloak.oic.utils import time_util
+from django3_keycloak.oic.utils.aes import AEAD
+from django3_keycloak.oic.utils.aes import AESError
 
 __author__ = 'rohe0002'
 

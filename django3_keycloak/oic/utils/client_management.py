@@ -12,9 +12,9 @@ import shelve
 import sys
 from builtins import input
 
-from oic import rndstr
-from oic.oic.provider import secret
-from oic.utils.clientdb import BaseClientDatabase
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.oic.provider import secret
+from django3_keycloak.oic.utils.clientdb import BaseClientDatabase
 
 __author__ = 'rolandh'
 

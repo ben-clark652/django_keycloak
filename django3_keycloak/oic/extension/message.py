@@ -6,19 +6,19 @@ import sys
 import requests
 import six
 
-from oic.exception import InvalidRedirectUri
-from oic.exception import MissingPage
-from oic.oauth2.message import OPTIONAL_LIST_OF_SP_SEP_STRINGS
-from oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
-from oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
-from oic.oauth2.message import SINGLE_OPTIONAL_INT
-from oic.oauth2.message import SINGLE_OPTIONAL_STRING
-from oic.oauth2.message import SINGLE_REQUIRED_STRING
-from oic.oauth2.message import ErrorResponse
-from oic.oauth2.message import Message
-from oic.oic.message import JasonWebToken
-from oic.utils.http_util import SUCCESSFUL
-from oic.utils.jwt import JWT
+from django3_keycloak.oic.exception import InvalidRedirectUri
+from django3_keycloak.oic.exception import MissingPage
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_SP_SEP_STRINGS
+from django3_keycloak.oic.oauth2.message import OPTIONAL_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import REQUIRED_LIST_OF_STRINGS
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_INT
+from django3_keycloak.oic.oauth2.message import SINGLE_OPTIONAL_STRING
+from django3_keycloak.oic.oauth2.message import SINGLE_REQUIRED_STRING
+from django3_keycloak.oic.oauth2.message import ErrorResponse
+from django3_keycloak.oic.oauth2.message import Message
+from django3_keycloak.oic.oic.message import JasonWebToken
+from django3_keycloak.oic.utils.http_util import SUCCESSFUL
+from django3_keycloak.oic.utils.jwt import JWT
 
 __author__ = 'roland'
 
@@ -239,7 +239,7 @@ def factory(msgtype):
                 pass
 
     # check among standard OAuth2 messages
-    from oic.oauth2 import message
+    from django3_keycloak.oic.oauth2 import message
 
     return message.factory(msgtype)
 

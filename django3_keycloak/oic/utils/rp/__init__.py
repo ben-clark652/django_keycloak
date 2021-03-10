@@ -4,20 +4,20 @@ import copy
 import hashlib
 import logging
 
-from oic import oic
-from oic import rndstr
-from oic.oauth2 import ErrorResponse
-from oic.oauth2 import TokenError
-from oic.oauth2 import ResponseError
-from oic.oic import ProviderConfigurationResponse
-from oic.oic import AuthorizationResponse
-from oic.oic import RegistrationResponse
-from oic.oic import AuthorizationRequest
-from oic.oic.message import OpenIDSchema
-from oic.exception import MissingAttribute
-from oic.utils.authn.client import CLIENT_AUTHN_METHOD
-from oic.utils.http_util import Redirect
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic import oic
+from django3_keycloak.oic import rndstr
+from django3_keycloak.oic.oauth2 import ErrorResponse
+from django3_keycloak.oic.oauth2 import TokenError
+from django3_keycloak.oic.oauth2 import ResponseError
+from django3_keycloak.oic.oic import ProviderConfigurationResponse
+from django3_keycloak.oic.oic import AuthorizationResponse
+from django3_keycloak.oic.oic import RegistrationResponse
+from django3_keycloak.oic.oic import AuthorizationRequest
+from django3_keycloak.oic.oic.message import OpenIDSchema
+from django3_keycloak.oic.exception import MissingAttribute
+from django3_keycloak.oic.utils.authn.client import CLIENT_AUTHN_METHOD
+from django3_keycloak.oic.utils.http_util import Redirect
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 __author__ = 'roland'
 

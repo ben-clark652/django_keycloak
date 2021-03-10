@@ -6,10 +6,10 @@ import six.moves.http_cookiejar as cookielib
 from six.moves.http_cookies import CookieError
 from six.moves.http_cookies import SimpleCookie
 
-from oic.oauth2.exception import NonFatalException
-from oic.oauth2.util import set_cookie
-from oic.utils.keyio import KeyJar
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic.oauth2.exception import NonFatalException
+from django3_keycloak.oic.oauth2.util import set_cookie
+from django3_keycloak.oic.utils.keyio import KeyJar
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 __author__ = 'roland'
 

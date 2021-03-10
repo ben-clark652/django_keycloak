@@ -8,9 +8,9 @@ import logging
 
 from six import string_types
 
-from oic.exception import UnSupported
-from oic.oauth2.exception import TimeFormatError
-from oic.utils.sanitize import sanitize
+from django3_keycloak.oic.exception import UnSupported
+from django3_keycloak.oic.oauth2.exception import TimeFormatError
+from django3_keycloak.oic.utils.sanitize import sanitize
 
 logger = logging.getLogger(__name__)
 

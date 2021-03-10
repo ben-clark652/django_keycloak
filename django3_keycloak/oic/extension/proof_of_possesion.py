@@ -10,13 +10,13 @@ from jwkest import jws
 from jwkest.jwk import keyrep
 from jwkest.jws import JWS
 
-from oic.extension.signed_http_req import SignedHttpRequest
-from oic.extension.signed_http_req import ValidationError
-from oic.oic.message import AccessTokenRequest
-from oic.oic.message import AccessTokenResponse
-from oic.oic.provider import Provider
-from oic.utils.http_util import Response
-from oic.utils.http_util import get_post
+from django3_keycloak.oic.extension.signed_http_req import SignedHttpRequest
+from django3_keycloak.oic.extension.signed_http_req import ValidationError
+from django3_keycloak.oic.oic.message import AccessTokenRequest
+from django3_keycloak.oic.oic.message import AccessTokenResponse
+from django3_keycloak.oic.oic.provider import Provider
+from django3_keycloak.oic.utils.http_util import Response
+from django3_keycloak.oic.utils.http_util import get_post
 
 __author__ = 'regu0004'
 

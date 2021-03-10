@@ -1,11 +1,11 @@
 import copy
 import logging
 
-from oic.exception import MissingAttribute
-from oic.oic import OpenIDSchema
-from oic.oic.claims_provider import ClaimsClient
-from oic.utils.sanitize import sanitize
-from oic.utils.userinfo import UserInfo
+from django3_keycloak.oic.exception import MissingAttribute
+from django3_keycloak.oic.oic import OpenIDSchema
+from django3_keycloak.oic.oic.claims_provider import ClaimsClient
+from django3_keycloak.oic.utils.sanitize import sanitize
+from django3_keycloak.oic.utils.userinfo import UserInfo
 
 __author__ = 'rolandh'
 
