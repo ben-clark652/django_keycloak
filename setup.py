@@ -8,6 +8,9 @@ setup(
     description='Django 3 Keycloak Integration',
     author='Ben Shearlaw',  # Type in your name
     include_package_data=True,
+    install_requires=[
+        "pyjwkest",
+    ],
     packages=find_packages(),
     author_email='ben.shearlaw@atamate.com',
     classifiers=[
